@@ -15,7 +15,7 @@ PEP 8 est essentiel pour plusieurs raisons :
 
 Passons en revue les principales recommandations de PEP 8 :
 
-#### ▶️ Importations
+#### ▶️ Imports
 
 Regrouper les importations au début du fichier et les organiser en trois sections : importations de la bibliothèque standard, importations de bibliothèques tierces, et importations spécifiques au projet.
 
@@ -66,7 +66,7 @@ PEP 8 définit des conventions de nommage pour les différentes entités du code
         def my_function():
             my_variable = 10
 
-- **Classes** : Utiliser le `PascalCase` ou le `CamelCase`, où chaque mot commence par une majuscule et les mots sont collés ensemble.
+- **Classes** : Utiliser le `PascalCase`, où chaque mot commence par une majuscule et les mots sont collés ensemble.
 
         class MyClassName:
             pass
@@ -100,7 +100,9 @@ Dans VSCode, il existe une extension pour se faire aider dans cette démarche de
 
 ![autoDoc](images/autodoc.png)
 
-Une fois téléchargé, le principe est simple : dans votre fonction vous écrivez 3 fois les guillemets de la `touche 3`. 
+Une fois téléchargé, le principe est simple : dans votre fonction vous écrivez 3 fois les guillemets de la `touche 3`.
+
+Conseil: aller dans les paramètres de l'extension et définir le format sur `numpy`. C'est le format le plus standard utilisé en Data Science.
 
 Si tout se passe bien, vous devez normalement voir ceci : 
 
@@ -120,7 +122,7 @@ Plusieurs outils peuvent aider à vérifier et à appliquer les règles de PEP 8
 - `ruff` : Un outil d'analyse statique rapide et moderne pour Python, qui vise à remplacer ou compléter des outils comme flake8, pycodestyle, pyflakes et même black. Ruff est conçu pour être extrêmement performant, en offrant des vérifications de style et de qualité de code avec une latence minimale tout en étant capable de s'intégrer avec des workflows existants.
 - `trunk` : Un gestionnaire d'intégration et de développement de projets qui permet de centraliser et de gérer divers outils d'analyse statique, de formatage et de vérification de code, comme ruff, black, et pylint. Trunk facilite la configuration et l'exécution de ces outils au sein d'un projet, en les combinant de manière cohérente et simplifiée pour améliorer l'efficacité du développement.
 
-On recommande ruff et trunk
+On recommande via trunk.
 
 ## Le Typing
 
@@ -137,7 +139,7 @@ C'est une couche supplémentaire de documentation et de bonnes pratiques.
 Les types de base incluent généralement :
 - Numériques : entiers (int), réels (float), décimaux (decimal).
 - Textuels : caractères (char), chaînes de caractères (string).
-- Booléens : valeurs booléennes (true, false).
+- Booléens : valeurs booléennes (True, False).
 - Tableaux : listes ou tableaux d'éléments de type homogène (list, array).
 - Objets : instances de classes avec des attributs et méthodes.
 
@@ -210,15 +212,17 @@ Tout ceci va être mis en pratique dans l'atelier `typing`.
 
 ## 📑 Conclusion
 
-Même si le typing et la docstring peuvent être repoussant au départ et donner une impression de surcharger le code, ils sont en fait des éléments essentiels pour se faire comprendre de tous, favoriser une bonne collaboration entre collègues codeurs et permettre une meilleure communication. 
+Même si le typing et la docstring peuvent être repoussants au départ et donner une impression de surcharger le code, ils sont en fait des éléments essentiels pour se faire comprendre de tous, favoriser une bonne collaboration entre collègues codeurs et permettre une meilleure communication. 
 
 Il est donc primordial d'intégrer ses éléments à son codage dès le départ.s
 
 ## 🫵 A vous de jouer
 
-Parce qu'il n'y a rien de mieux pour apprendre l'informatique que de coder par soi-même, vous retrouverez dans le dossier `typing` un fichier python `exemple_typing.py` qui vous permettra de vous familiariser avec cette pratique. 
+Parce qu'il n'y a rien de mieux pour apprendre l'informatique que de coder par soi-même, vous retrouverez dans le dossier `typing_exercise` un fichier python `exemple_typing.py` qui vous permettra de vous familiariser avec cette pratique.
 
-N'hésitez pas à essayer de coder une fonction, de la typer puis de la montrer à votre tuteur.
+Votre objectif: typer et documenter les différentes fonctions écrites.
+
+N'hésitez pas à essayer de coder une fonction, de la typer puis de la montrer à votre tuteur. Une correction est également disponible.
 
 Bon typing à tous !
 

@@ -1,7 +1,7 @@
 import typing as t
 from typing import Optional
 from IPython import embed
-from functools import cache, lru_cache, cached_property
+from functools import cache
 
 @cache
 def f(x):
@@ -43,7 +43,7 @@ class DatacraftManager(Datacrafter):
 
     def print_stagiaires(self):
         if self.stagiaires:
-            for prenom, stagiaire in self.stagiaires.items():
+            for _, stagiaire in self.stagiaires.items():
                 print(stagiaire)
         else:
             print("Aucun stagiaire")

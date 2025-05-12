@@ -108,4 +108,3 @@ if __name__ == "__main__":
 
 #Dans le terminal, entrer dans le fichier qui contient ce code 
 # Puis python mon_fichier.py
-
