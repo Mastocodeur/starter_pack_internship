@@ -58,8 +58,6 @@ Pour vérifier la configuration :
 ```bash
 git config --list
 ```
-Voici la section complète à ajouter dans ton README pour configurer la clé SSH avec GitHub, prête à être copiée :
-
 ---
 
 ### 🔑 Configurer une clé SSH pour GitHub
